@@ -15,6 +15,25 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    {/* Icon fontanwesome */}
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    {/* Reset css & grid sytem */}
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/library.css" />
+    {/* Owl Slider css */}
+    <link rel="stylesheet" href="assets/owlCarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlCarousel/assets/owl.theme.default.min.css" />
+    {/* Layout */}
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    {/* index */}
+    <link rel="stylesheet" type="text/css" href="./assets/css/cart.css" />
+    <!-- Layout -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl caroucel Js-->
+    <script src="assets/owlCarousel/owl.carousel.min.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -39,5 +58,72 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="./assets/js/homeScript.js"></script>
+    
+
+    <script>
+      $('.owl-carousel.hight').owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsive: {
+              0: {
+                  items: 2
+              },
+              600: {
+                  items: 3
+              },
+              1000: {
+                  items: 5
+              }
+          }
+      })
+      $('.owl-carousel.news').owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              600: {
+                  items: 1
+              },
+              1000: {
+                  items: 2
+              }
+          }
+      })
+      $('.owl-carousel.bands').owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+              0: {
+                  items: 2
+              },
+              600: {
+                  items: 3
+              },
+              1000: {
+                  items: 6
+              }
+          }
+      })
+      
+  </script>
+  <script src="./assets/js/commonscript.js"></script>
   </body>
 </html>
