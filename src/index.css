@@ -6,7 +6,133 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.row{
+  column-count: 2 ;
+  grid-column-gap: 30px;
+}
 
+.home-customer{
+
+  display: flex;
+  background-color:cadetblue;
+  width: 100% ;
+}
+
+.full-height {
+  margin-top: 5px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Canh giữa ngang */
+}
+.customer-name {
+  color: aqua;
+  font-size: 24px;
+  margin-top: 10px;
+   /* Khoảng cách giữa ảnh và tên khách hàng */
+}
+.img-customer {
+  width: 200px; /* Đặt chiều rộng và chiều cao mong muốn */
+  height: 200px;
+  border-radius: 100%; /* Biến ảnh thành hình tròn */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo khi resize */
+  overflow: hidden; /* Ẩn phần nội dung ảnh vượt ra khỏi khu vực giới hạn */
+}
+
+.order-history {
+  margin-top: 10px;
+  font-size: 24px; /* Kích thước chữ */
+  text-align: center; /* Căn giữa ngang */
+  padding: 10px; /* Thêm khoảng cách giữa nội dung và viền */
+  background-color: aliceblue;
+}
+.content{
+  font-size: 20px; /* Kích thước chữ */
+  margin-bottom: 20px;
+  padding: 20px; /* Thêm khoảng cách giữa nội dung và viền */
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Định dạng tiêu đề của bảng */
+th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Định dạng dòng của bảng */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Định dạng ô trong bảng */
+td {
+  padding: 10px;
+}
+
+/* Định dạng ô cuối cùng trong mỗi dòng */
+td:last-child {
+  text-align: center;
+}
+
+/* Định dạng màu của dòng chẵn */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #8e2011;
+  border: none;
+  border-radius: 15px;
+}
+
+.div-wait {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #00c925;
+  border: none;
+  border-radius: 15px;
+}
+
+.div-approved {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #00ff2f;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #ff0000}
+
+.button:active {
+  background-color: #ff0000;
+  transform: translateY(4px);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
